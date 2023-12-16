@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://67apcg75e1ee"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Health" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Health"]
+layout_mode = 2
+text = "Health"
+
+[node name="Weapons" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 256.0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Weapons"]
+layout_mode = 2
+text = "Weapons
+"
+
+[node name="Inventory" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Inventory"]
+layout_mode = 2
+text = "Inventory"
+
+[node name="Message" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Message"]
+layout_mode = 2
+text = "Also:
+Project > Project Settings > Display > Window > Stretch
+Mode: canvas_items
+Aspect: expand"
